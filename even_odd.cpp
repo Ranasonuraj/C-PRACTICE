@@ -8,8 +8,13 @@ int main()
 {
 int n ;
 cin>>n;
-isEven(n)? cout << "Even" :
+if(n<0)
+    cout<<"invalid";
+else {
+    isEven(n)? cout << "Even" :
            cout << "Odd";
+}
+
 
 return 0;
 }
